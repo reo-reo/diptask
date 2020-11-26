@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+   <h2 style = "text-align: center;">テストデータを入力してください</h2>
+　　<form action="/result" method="POST" enctype="multipart/form-data">
+      <input type="file" name="data" accept="csv"><br>
+      <button type = "submit">分析開始</button>
+   </form>
+
+   <p>分析開始ボタンを押すと分析が始まります。</p>
+   <p>分析には時間がかかる場合がありますので、ページを移動せず、そのままお待ちください。</p>
+      
+{% endblock %}
+
